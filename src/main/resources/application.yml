@@ -1,0 +1,34 @@
+#数据库，redis相关配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/smallrouting?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  redis:
+    database: 0
+    host: 118.89.29.230
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 50
+        max-wait: 1s
+
+#端口配置
+server:
+  port: 8081
+
+#短信相关配置
+msg:
+  app:
+    id: 1400132050
+    key: 93aaf154b1044701eb395ca253555a4a
+  template:
+    id: 183106
+  timeout: 10
+
+
+
+
+
