@@ -14,6 +14,9 @@ spring:
         max-idle: 100
         min-idle: 50
         max-wait: 1s
+  thymeleaf:
+    cache: false
+
 
 #端口配置
 server:
@@ -27,7 +30,6 @@ msg:
   template:
     id: 183106
   timeout: 10
-
 
 
 
