@@ -1,10 +1,15 @@
+#端口配置
+server:
+  port: 8081
+
 #数据库，redis相关配置
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/smallrouting?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://118.89.29.230:33060/smallrouting?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
   redis:
     database: 0
     host: 118.89.29.230
@@ -17,11 +22,6 @@ spring:
   thymeleaf:
     cache: false
 
-
-#端口配置
-server:
-  port: 8081
-
 #短信相关配置
 msg:
   app:
@@ -30,6 +30,18 @@ msg:
   template:
     id: 183106
   timeout: 10
+
+#配置日志
+logging:
+  config: classpath:log4j2.yml
+
+#分页插件
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
 
 
 

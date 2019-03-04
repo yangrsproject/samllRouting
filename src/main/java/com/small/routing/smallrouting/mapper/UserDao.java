@@ -1,7 +1,11 @@
 package com.small.routing.smallrouting.mapper;
 
 import com.small.routing.smallrouting.entity.UserEntity;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface UserDao {
