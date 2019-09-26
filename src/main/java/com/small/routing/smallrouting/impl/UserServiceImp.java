@@ -1,8 +1,8 @@
-package com.small.routing.smallrouting.ser_impl;
+package com.small.routing.smallrouting.impl;
 
 import com.small.routing.smallrouting.mapper.UserDao;
 import com.small.routing.smallrouting.entity.UserEntity;
-import com.small.routing.smallrouting.ser_inter.UserService;
+import com.small.routing.smallrouting.inter.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

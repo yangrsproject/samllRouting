@@ -8,6 +8,8 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Mapper
 @Transactional
 public interface LoginMsgDao {
@@ -22,4 +24,7 @@ public interface LoginMsgDao {
     @Insert("insert into s_loginmsg_info(phone_num, msg_content, op_time) " +
             "values(#{phone_num}, #{msg_content}, #{op_time})")
     void insert(LoginSendMsgEntity loginSendMsgEntity);
+
+    List<LoginSendMsgEntity> selectAll();
+
 }

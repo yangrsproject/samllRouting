@@ -1,5 +1,6 @@
 package com.small.routing.smallrouting.redis;
 
+import com.small.routing.smallrouting.mapper.SLoginmsgInfoDao;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,9 +16,17 @@ public class RedisAutoTest {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
+    @Autowired
+    private SLoginmsgInfoDao sLoginmsgInfoDao;
+
     @Test
     public void save(){
         stringRedisTemplate.opsForValue().set("zzp","big z");
         Assert.assertEquals("big z",stringRedisTemplate.opsForValue().get("zzp"));
+    }
+
+    @Test
+    public void selectAll(){
+        sLoginmsgInfoDao.selectAll();
     }
 }

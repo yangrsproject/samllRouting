@@ -1,6 +1,6 @@
 #端口配置
 server:
-  port: 8081
+  port: 8082
 
 #数据库，redis相关配置
 spring:
@@ -19,6 +19,7 @@ spring:
         max-idle: 100
         min-idle: 50
         max-wait: 1s
+    password: 123456
   thymeleaf:
     cache: false
 
@@ -31,6 +32,13 @@ msg:
     id: 183106
   timeout: 10
 
+photo:
+  app:
+    id: AKIDLSJuEOG1TjnbAUeZEdppb9TnshGb7X7R
+    key: IK6cvylIZgX8UdXBZhfOr56sOfhZCZkj
+  save:
+    path: /home/yrs/photo/
+
 #配置日志
 logging:
   config: classpath:log4j2.yml
@@ -41,6 +49,9 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
 
 
 

@@ -1,4 +1,4 @@
-package com.small.routing.smallrouting.ser_inter;
+package com.small.routing.smallrouting.inter;
 
 import com.small.routing.smallrouting.entity.UserEntity;
 

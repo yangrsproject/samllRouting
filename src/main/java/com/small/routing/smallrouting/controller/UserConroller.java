@@ -1,8 +1,8 @@
-package com.small.routing.smallrouting.control;
+package com.small.routing.smallrouting.controller;
 
 import com.small.routing.common.ResponseMsg;
 import com.small.routing.smallrouting.entity.UserEntity;
-import com.small.routing.smallrouting.ser_inter.UserService;
+import com.small.routing.smallrouting.inter.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
